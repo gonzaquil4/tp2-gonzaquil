@@ -1,0 +1,138 @@
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+/* Imagen superpuesta */
+.overlay-image {
+  position: absolute;
+  top: 5px; /* Ajusta la posición vertical */
+  right: 10px; /* Ajusta la posición horizontal */
+  z-index: 1; /* Asegura que la imagen esté sobre el slideshow */
+}
+
+/* Contenedor del slideshow de fondo */
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;  /* Para que esté detrás del contenido */
+  animation: slideshow 30s infinite; /* Animación de fondo */
+}
+/* Animación de fondo */
+@keyframes slideshow {
+  0% {
+      background-image: url('imagenes/1.jpg');
+  }
+  14% {
+      background-image: url('imagenes/2.jpg');
+  }
+  29% {
+      background-image: url('imagenes/3.jpg');
+  }
+  43% {
+      background-image: url('imagenes/4.jpg');
+}
+  57% {
+      background-image: url('imagenes/5.jpg');
+}
+  71% {
+      background-image: url('imagenes/7.jpg');
+}
+  85% {
+    background-image: url('imagenes/8.jpg');
+}
+  100% {
+    background-image: url('imagenes/acay.jpg');
+}
+}
+
+/* Contenido del portfolio */
+.contenido-portfolio {
+  position: relative;
+  z-index: 1;  /* Para asegurarse que esté encima del fondo */
+  padding: 6px;
+}
+
+/* Estilos de titulos */
+h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 4px;
+  font-family: 'EB Garamond', serif;  
+  color: rgb(83, 27, 238);       
+}
+h2 {
+  margin-top: 1px;
+  margin-bottom: 2px;
+  font-size: 1.2em;
+  text-align: left;
+  color: rgb(83, 27, 238); 
+}
+/* Estilos de tablas */
+table {
+  width: 42%;
+  border-collapse: collapse;
+  margin-bottom: 6px;
+}
+
+td, th {
+  padding: 2px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(100, 53, 53, 0.6);
+  color: rgb(245, 242, 242);
+}
+
+td {
+  background-color: rgba(100, 53, 53, 0.6);
+  color: rgb(245, 242, 242);
+}
+
+
+form {
+  max-width: 100px;
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+  padding: 0.5px;
+}
+
+input, textarea {
+  width: 280px;
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+h3 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 1em;
+  text-align: center;
+  color: #940a0a;
+}

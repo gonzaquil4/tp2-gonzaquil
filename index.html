@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+    <div class="overlay-image">
+        <img src="imagenes/Imagen1.jpg" alt="imagen1" style="width: 300px">
+
+  <!-- Sección de Contacto -->
+        <section>
+            <h3>Contacto</h3>
+            <form action="enviar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="2" required></textarea><br><br>
+    
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </section>
+    </div>
+
+    <!-- Contenedor para el slideshow de fondo -->
+    <div class="background-slideshow"></div>
+
+    <!-- Contenedor de todo el contenido del portfolio -->
+    <div class="contenido-portfolio">
+        <!-- Sección de Información Personal -->
+        <section>
+            <h1>PORTFOLIO</h1>
+            <h2>Información Personal</h2>
+            <table class="personal-info">
+                <tr>
+                    <td>CLAUDIO CRISTIAN GONZALEZ</td>
+                </tr>
+                <tr>
+                    <td>gonzaquil4@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>+054 911 48881299</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección de Objetivos Personales -->
+        <section>
+            <h2>Objetivos Personales</h2>
+            <table class="work-experience">
+                <tr>
+                    <td>Terminar la Tecnicatura de Desarrollo de Software</td>
+                </tr>
+                <tr>
+                    <td>Superación personal continua y Busqueda de nuevos desafios</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección de Educación -->
+        <section>
+            <h2>Educación</h2>
+            <table class="education">
+                <tr>
+                    <td>1998-2000: Curso Director Tecnico de Futlbol</td>
+                </tr>
+                <tr>
+                    <td>2016: Curso Reparacion de bicicletas</td>
+                </tr>
+                <tr>
+                    <td>2016: Curso De Formación En Energías Renovables, energía eólica y solar</td>
+                </tr>
+                <tr>
+                    <td>2016 - 2017 - 2018 - 2019: Cursos De Formación En Recupero De Créditos</td>
+                </tr>
+                <tr>
+                    <td>2023 - Actualidad: Tecnicatura en Desarrollo de Software</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section>
+            <h2>Habilidades</h2>
+            <table class="skills">
+                <tr>
+                    <td>Estrategias de trabajo en equipo y organizativas</td>
+                </tr>
+                <tr>
+                    <td>Resolución de conflictos</td>
+                </tr>
+                <tr>
+                    <td>Tratamiento de la mora</td>
+                </tr>
+                <tr>
+                    <td>Organización de subastas de automotores</td>
+                </tr>
+            </table>
+        </section>
+                <!-- Sección de historial de empleos -->
+        <section>
+                <h2>Historial Empleos</h2>
+                <table class="skills">
+                    <tr>
+                        <td>2011 - actualidad: FCA Cia Financiera S.A.</td>
+                    </tr>
+                    <tr>
+                        <td>2008 - 2011: Plataforma de Marketing Directo</td>
+                    </tr>
+                    <tr>
+                        <td>2000 - 2008: Diversos Call Centers</td>
+                    </tr>
+                </table>
+        </section>
+    </div>
+</header>
+</body>
+</html>
